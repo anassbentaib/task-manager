@@ -1,0 +1,91 @@
+Task Management Application
+A simplified task management application built with React (frontend) and Node.js/Express (backend) that demonstrates core frontend and backend skills with moderate complexity.
+
+Features
+User authentication via Supabase
+Task creation, editing, and deletion
+Category assignment for tasks
+Task prioritization via drag-and-drop
+Filtering tasks by status and category
+Responsive design for mobile and desktop
+Tech Stack
+Frontend
+React with TypeScript
+React Router for navigation
+React Beautiful DnD for drag-and-drop functionality
+Tailwind CSS for styling
+Axios for API requests
+Supabase JS client for authentication
+Backend
+Node.js with Express
+TypeScript
+Supabase for data storage and authentication
+JWT authentication
+Project Structure
+The project is organized into two main directories:
+
+Frontend Structure
+frontend/
+├── public/
+│   └── index.html
+├── src/
+│   ├── api/           
+│   ├── components/   
+│   ├── context/     
+│   ├── hooks/    
+│   ├── pages/
+│   ├── types/        
+│   └── utils/        
+└── package.json
+Backend Structure
+backend/
+├── src/
+│   ├── config/       
+│   ├── controllers
+│   ├── middleware/   
+│   ├── models/   
+│   ├── routes/      
+│   ├── types/         
+│   └── utils/      
+└── package.json
+Setup and Installation
+Prerequisites
+Node.js (v14+)
+npm or yarn
+Supabase account
+Backend Setup
+Clone the repository
+Navigate to the backend directory
+bash
+cd backend
+Install dependencies
+bash
+npm install
+Create a .env file in the backend directory with the following variables:
+PORT=9000
+NODE_ENV=development
+SUPABASE_URL=your-supabase-project-url
+SUPABASE_SERVICE_KEY=your-supabase-service-key
+CORS_ORIGIN=http://localhost:5173
+Set up Supabase SQL functions
+Run the SQL queries from the provided migration files in the Supabase SQL editor
+Start the development server
+bash
+npm run dev
+Frontend Setup
+Navigate to the frontend directory
+bash
+cd frontend
+Install dependencies
+bash
+npm install
+Create a .env file in the frontend directory with the following variables:
+REACT_APP_API_URL=http://localhost:9000/api
+REACT_APP_SUPABASE_URL=your-supabase-project-url
+REACT_APP_SUPABASE_ANON_KEY=your-supabase-anon-key
+Start the development server
+bash
+npm start
+API Endpoints
+Authentication
+POST /api/auth/register - Register a new
